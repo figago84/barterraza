@@ -33,53 +33,73 @@ limitations under the License.
 </head>
 
 <body>
+  <div class="viewport">
+    <header class="header" role="banner">
+      
+      <nav id="nav" class="nav" role="navigation">
+        
+        <!-- ACTUAL NAVIGATION MENU -->
+        <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+        
+        <!-- MENU TOGGLE BUTTON -->
+        <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+          <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+            <title>Toggle Menu</title>
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+              <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+            </g>
+          </svg>
+        </a>
+        
+        <!-- ANIMATED BACKGROUND ELEMENT -->
+        <div class="splash"></div>
+        
+      </nav>
+      
+    </header>
+    
+    <!-- DEMO CONTENT -->
+    <main class="main" role="main">
+      <div class="gallery" aria-label="gallery">
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+      </div>
+    </main>
+  </div>
 
-
-  <div style="position: fixed; z-index: 999;">
-  <nav class="menu">
-    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-    <label class="menu-open-button" for="menu-open">
-      <span class="hamburger hamburger-1"></span>
-      <span class="hamburger hamburger-2"></span>
-      <span class="hamburger hamburger-3"></span>
-    </label>
-
-    <a href="#" class="menu-item"> <i class="fa fa-bar-chart"></i> </a>
-    <a href="#" class="menu-item"> <i class="fa fa-plus"></i> </a>
-    <a href="#" class="menu-item"> <i class="fa fa-heart"></i> </a>
-    <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>
-
-
-  </nav>
-
-
-  <!-- filters -->
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2"
-          result="shadow" />
-        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-        <feComposite in2="shadow" in="goo" result="goo" />
-        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-  </svg>
-</div>
-
-
-
-
-  <header>
+  <!-- <header>
     <h1 id="title"></h1>
   </header>
 
@@ -122,7 +142,7 @@ limitations under the License.
   </footer>
 
 
-  <script src="viewer.js"></script>
+  <script src="viewer.js"></script> -->
 </body>
 
 </html>
