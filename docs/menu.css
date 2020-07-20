@@ -2,16 +2,16 @@
   background-color: transparent;
   height: 6rem;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   right: 0;
   z-index: 2;
 }
 .bottom{
-  background-color: transparent;
-  height: 6rem;
+  background-color:transparent;
+  height: 10%;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   right: 0;
   z-index: 2;
@@ -29,8 +29,7 @@
 
 .btn {
   display:block;
-  height: 4rem;
-  width: 4rem;
+  height: 100%;
   border-radius: 50%;
   box-shadow: 0 0 4px gray;
   background-color: white;
@@ -38,8 +37,6 @@
 }
 
 .selected {
-  height: 5rem;
-  width: 5rem;
   background-color: #003300;
   border: 1px solid white;
 
