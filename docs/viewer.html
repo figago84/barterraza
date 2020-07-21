@@ -20,12 +20,13 @@ limitations under the License.
 
     <link rel="stylesheet" href=".https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/web/pdf_viewer.css">
     <link rel="stylesheet" type="text/css" href="viewer2.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
 
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/web/pdf_viewer.js"></script>
   </head>
 
-  <body>
+  <body onload="renderButtons()">
     <header>
       <h1 id="title"></h1>
     </header>
@@ -57,17 +58,57 @@ limitations under the License.
       <div class="clearBoth"></div>
       <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
     </div>
-
-    <footer>
-      <button class="toolbarButton pageUp" title="Previous Page" id="previous"></button>
+    
+    
+    <div class="top">
+      <div class="child">
+        <div class="btn selected" onclick="showMenu('top')">
+          <img src="icon/chef.svg" alt="Food" height="60%" width="60%"/>
+        </div>
+      </div>
+      <div class="child" onclick="goTo()">
+        <div class="btn"><img src="icon/winery.svg" alt="Wines" height="60%" width="60%" /></div>
+      </div>
+    </div>
+    </div>
+    <div class="bottom">
+      <div class="child">
+        <div class="btn selected" onclick="showMenu('bottom')">
+          <img src="img/spain.png" alt="Spanish" height="60%" width="60%" class="flag"/>
+        </div>
+      </div>
+      <div class="child">
+        <div class="btn">
+          <img src="img/uk.png" alt="Spanish" height="60%" width="60%" class="flag"/>
+        </div>
+      </div>
+      <div class="child">
+        <div class="btn">
+          <img src="img/france.png" alt="Spanish" height="60%" width="60%" class="flag"/>
+        </div>
+      </div>
+      <div class="child">
+        <div class="btn">
+          <img src="img/germany.png" alt="Spanish" height="60%" width="60%" class="flag"/>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="line">
+  
+    </div> -->
+  
+    <!-- <footer >
+      <button class="toolbarButton pageUp" title="Previous Page" id="previous">Spanish</button>
       <button class="toolbarButton pageDown" title="Next Page" id="next"></button>
-
+  
       <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1">
-
+  
       <button class="toolbarButton zoomOut" title="Zoom Out" id="zoomOut"></button>
       <button class="toolbarButton zoomIn" title="Zoom In" id="zoomIn"></button>
-    </footer>
-
-     <script src="viewer2.js"></script>
+    </footer> -->
+  
+  
+    <script src="viewer.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
