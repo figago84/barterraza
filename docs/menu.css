@@ -51,6 +51,10 @@ box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);
 
 }
 
+.flag{
+  border-radius: 50%;
+}
+
 /* .line{
   background-color: transparent;
   height: 3rem;
