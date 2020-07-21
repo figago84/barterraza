@@ -16,3 +16,8 @@ function showMenu(menuName){
       children[i].children[0].style.visibility = "hidden";
   }
 }
+
+function goTo()
+{
+  location.href="https://figago84.github.io/barterraza/index.html"
+}
