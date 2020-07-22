@@ -46,7 +46,7 @@ box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);
 
 .selected {
   /* background-color: #003300; */
-  background-color: red;
+  background-color: yellow;
   border: 1px solid white;
   visibility: visible;
 
