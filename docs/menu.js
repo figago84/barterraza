@@ -17,7 +17,7 @@ function showMenu(menuName){
   }
 }
 
-function goTo()
+function goTo(site)
 {
-  location.href="https://figago84.github.io/barterraza/index.html"
+  location.href="https://figago84.github.io/barterraza/" + site + ".html"
 }

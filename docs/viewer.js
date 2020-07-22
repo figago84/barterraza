@@ -28,7 +28,6 @@ var CMAP_PACKED = true;
 pdfjsLib.GlobalWorkerOptions.workerSrc =
   "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.worker.js";
 
-var DEFAULT_URL = "https://figago84.github.io/barterraza/file/ejemplo.pdf";
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;
