@@ -7,9 +7,11 @@
   right: 0;
   z-index: 2;
   margin-left: 4%;
+  width: 25%;
 }
+
 .bottom{
-  background-color:transparent;
+  background-color: transparent;
   height: 15%;
   position: absolute;
   bottom: 4%;
@@ -17,21 +19,35 @@
   right: 0;
   z-index: 2;
   margin-left: 4%;
+  width: 25%;
+}
+
+.non-selected{
+  background-color: transparent;
+  left: 25%;
+  width: 75%;
+}
+
+.top .child, .bottom .child{
+  width: 100%;
+}
+
+.top.non-selected .child, .bottom.non-selected .child{
+  width: 33%;
 }
 
 .child {
   float: left;
-  width: 23%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
 .btn {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   border-radius: 50%;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);
 -moz-box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);

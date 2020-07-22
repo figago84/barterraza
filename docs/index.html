@@ -71,38 +71,44 @@ limitations under the License.
   <div class="top">
     <div class="child">
       <div class="btn selected" onclick="showMenu('top')">
-        <img src="icon/chef_light.svg" alt="Food" height="60%" width="60%"/>
+        <img src="icon/chef_light.svg" alt="Food" height="60%" width="60%" />
       </div>
-    </div>
-    <div class="child">
-      <div class="btn" onclick="goTo('wines')"><img src="icon/winery_dark.svg" alt="Wines" height="60%" width="60%" /></div>
     </div>
   </div>
-  </div>
-  <div class="bottom">
+  <div class="top non-selected">
     <div class="child">
-      <div class="btn selected" onclick="showMenu('bottom')">
-        <img src="img/spain.png" alt="Español" height="60%" width="60%" class="flag"/>
-      </div>
-    </div>
-    <div class="child">
-      <div class="btn" onclick="goTo('food_EN')">
-        <img src="img/uk.png" alt="English" height="60%" width="60%" class="flag"/>
-      </div>
-    </div>
-    <div class="child">
-      <div class="btn" onclick="goTo('food_FR')">
-        <img src="img/france.png" alt="François" height="60%" width="60%" class="flag"/>
-      </div>
-    </div>
-    <div class="child">
-      <div class="btn" onclick="goTo('food_GR')">
-        <img src="img/germany.png" alt="Deutsche" height="60%" width="60%" class="flag"/>
+      <div class="btn" onclick="goTo('wines')"><img src="icon/winery_dark.svg" alt="Wines" height="60%" width="60%" />
       </div>
     </div>
   </div>
 
-  <footer >
+
+  <div class="bottom">
+    <div class="child">
+      <div class="btn selected" onclick="showMenu('bottom')">
+        <img src="img/spain.png" alt="Español" height="60%" width="60%" class="flag" />
+      </div>
+    </div>
+  </div>
+  <div class="bottom non-selected">
+    <div class="child">
+      <div class="btn" onclick="goTo('food_EN')">
+        <img src="img/uk.png" alt="English" height="60%" width="60%" class="flag" />
+      </div>
+    </div>
+    <div class="child">
+      <div class="btn" onclick="goTo('food_FR')">
+        <img src="img/france.png" alt="François" height="60%" width="60%" class="flag" />
+      </div>
+    </div>
+    <div class="child">
+      <div class="btn" onclick="goTo('food_GR')">
+        <img src="img/germany.png" alt="Deutsche" height="60%" width="60%" class="flag" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
     <button class="toolbarButton pageUp" title="Previous Page" id="previous"></button>
     <button class="toolbarButton pageDown" title="Next Page" id="next"></button>
 
