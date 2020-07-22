@@ -2,7 +2,10 @@ function renderButtons() {
   var height = window.innerHeight;
   document.getElementsByClassName('loading')[0].style.height=height;
   document.querySelectorAll('.btn').forEach(function (element) {
-    element.style.height = element.clientWidth + "px"
+    if (element.clientWidth < element.clientHeight)
+      element.style.height = element.clientWidth + "px"
+    else
+      element.style.width = element.clientHeight + "px"
     // if (!element.className.includes("selected"))
     //   element.style.display = "none"
   });
