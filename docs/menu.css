@@ -38,7 +38,6 @@
 box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);
   background-color: white;
   border: 1px solid #003300;
-  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,21 +46,8 @@ box-shadow: 7px 7px 5px 0px rgba(128,128,128,0.46);
 .selected {
   background-color: #003300;
   border: 1px solid white;
-  visibility: visible;
-
 }
 
 .flag{
   border-radius: 50%;
 }
-
-/* .line{
-  background-color: transparent;
-  height: 3rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  border-top: 2px solid #BBBBBB;
-} */
