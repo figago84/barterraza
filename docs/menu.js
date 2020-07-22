@@ -8,7 +8,8 @@ function renderButtons() {
   });
 
   document.getElementsByClassName("top non-selected")[0].style.display = "none"
-  document.getElementsByClassName("bottom non-selected")[0].style.display = "none"
+  if (document.getElementsByClassName("bottom non-selected").length > 0)
+    document.getElementsByClassName("bottom non-selected")[0].style.display = "none"
   document.getElementsByClassName("loading")[0].style.display = "none"
 
 }
