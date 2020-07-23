@@ -20,6 +20,7 @@ function renderButtons() {
 function renderWinesButtons() {
   renderButtons();
   document.getElementsByClassName("top")[0].style.bottom = "4%"
+  document.getElementsByClassName("top non-selected")[0].style.bottom = "4%"
 
 }
 
