@@ -59,7 +59,7 @@ var PDFViewerApplication = {
 
     var url = params.url;
     var self = this;
-    this.setTitleUsingUrl(url);
+    // this.setTitleUsingUrl(url); ... not to set the title
 
     // Loading document.
     var loadingTask = pdfjsLib.getDocument({
@@ -83,7 +83,7 @@ var PDFViewerApplication = {
         self.pdfHistory.initialize({ fingerprint: pdfDocument.fingerprint });
 
         self.loadingBar.hide();
-        self.setTitleUsingMetadata(pdfDocument);
+        // self.setTitleUsingMetadata(pdfDocument); ... not to set the title
       },
       function (exception) {
         var message = exception && exception.message;
